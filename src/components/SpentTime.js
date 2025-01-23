@@ -43,14 +43,14 @@ export const SpentTime = () => {
     <Box
       width={"100%"}
       
-      borderBottom={"1px solid #5F616D"}
+      borderBottom={"1px solid #34353b"}
     >
       {/* Header Section */}
       <Box
         width={"1280px"}
         margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
+        borderRight={"1px solid #34353b"}
+        borderLeft={"1px solid #34353b"}
         paddingLeft={"40px"}
         paddingRight={"40px"}
         paddingTop={"55px"}
@@ -73,7 +73,7 @@ export const SpentTime = () => {
           fontWeight={300}
           color="#FFFFFF"
           textAlign={"center"}
-          borderBottom={"1px solid #5F616D"}
+          borderBottom={"1px solid #34353b"}
           paddingBottom={"60px"}
         >
           Spend time analyzing data, not organizing it
@@ -83,8 +83,8 @@ export const SpentTime = () => {
       {/* Content Section */}
       <Box
         margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
+        borderRight={"1px solid #34353b"}
+        borderLeft={"1px solid #34353b"}
         paddingBottom={"55px"}
         display={"flex"}
         flexDirection={"row"}

@@ -34,14 +34,14 @@ export const BeniFit = () => {
   return (
     <Box
       width={"100%"}
-      borderTop={"1px solid #5F616D"}
-      borderBottom={"1px solid #5F616D"}
+      borderTop={"1px solid #34353b"}
+      borderBottom={"1px solid #34353b"}
     >
       <Box
         width={"1280px"}
         margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
+        borderRight={"1px solid #34353b"}
+        borderLeft={"1px solid #34353b"}
         paddingLeft={"40px"}
         paddingRight={"40px"}
         paddingTop={"55px"}
@@ -70,8 +70,8 @@ export const BeniFit = () => {
       </Box>
       <Box
         margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
+        borderRight={"1px solid #34353b"}
+        borderLeft={"1px solid #34353b"}
         paddingBottom={"55px"}
         display={"flex"}
         flexDirection={"row"}
@@ -82,9 +82,9 @@ export const BeniFit = () => {
       >
         {content.map((item, index) => (
           <Box
-            borderLeft={ index!=0?"1px solid #5F616D":""}
-            borderTop={"1px solid #5F616D"}
-             borderBottom={"1px solid #5F616D"}
+            borderLeft={ index!=0?"1px solid #34353b":""}
+            borderTop={"1px solid #34353b"}
+             borderBottom={"1px solid #34353b"}
             padding={"40px"}
             borderRight={"none"}
             width={"90%"}

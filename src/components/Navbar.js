@@ -102,7 +102,7 @@ export const Navbar = () => {
               },
             }}
           > */}
-            
+            <Box>
             <Button
               sx={{
                 backgroundColor: "white",
@@ -133,6 +133,7 @@ export const Navbar = () => {
                 <Log style={{ marginLeft: "10px" }} />
               </Box>
             </Button>
+          </Box>
           </Box>
       </Box>
     </div>

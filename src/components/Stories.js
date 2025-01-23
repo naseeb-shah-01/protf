@@ -28,14 +28,14 @@ export const Stories = () => {
   return (
     <Box
       width={"100%"}
-      borderTop={"1px solid #5F616D"}
-      borderBottom={"1px solid #5F616D"}
+      borderTop={"1px solid #34353b"}
+      borderBottom={"1px solid #34353b"}
     >
       <Box
         width={"1280px"}
         margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
+        borderRight={"1px solid #34353b"}
+        borderLeft={"1px solid #34353b"}
         paddingTop={"55px"}
       
         alignContent={"center"}
@@ -66,7 +66,7 @@ export const Stories = () => {
         <Box mt={"40px"} marginTop={"60px"}>
           {content.map((item) => (
             <Box
-              border={"1px  solid #5F616D"}
+              border={"1px  solid #34353b"}
               display={"flex"}
               width={"100%"}
               flexDirection={"row"}
@@ -81,7 +81,7 @@ export const Stories = () => {
               <Box
                 width={"75%"}
                 padding={"30px"}
-                borderLeft={"1px solid #5F616D"}
+                borderLeft={"1px solid #34353b"}
               >
                 <Typography
                   fontFamily={"Matter-TRIAL"}

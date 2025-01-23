@@ -12,14 +12,14 @@ export const FreeTrail=()=>{
       ];
     return  <Box
     width={"100%"}
-    borderTop={"1px solid #5F616D"}
-    borderBottom={"1px solid #5F616D"}
+    borderTop={"1px solid #34353b"}
+    borderBottom={"1px solid #34353b"}
   >
     <Box
       width={"1280px"}
       margin={"auto"}
-      borderRight={"1px solid #5F616D"}
-      borderLeft={"1px solid #5F616D"}
+      borderRight={"1px solid #34353b"}
+      borderLeft={"1px solid #34353b"}
       paddingLeft={"40px"}
       paddingRight={"40px"}
       paddingTop={"35px"}
