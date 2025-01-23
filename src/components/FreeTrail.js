@@ -20,8 +20,8 @@ export const FreeTrail=()=>{
       margin={"auto"}
       borderRight={"1px solid #5F616D"}
       borderLeft={"1px solid #5F616D"}
-      paddingLeft={"20px"}
-      paddingRight={"20px"}
+      paddingLeft={"40px"}
+      paddingRight={"40px"}
       paddingTop={"35px"}
       paddingBottom={"35px"}
     >
@@ -30,6 +30,7 @@ export const FreeTrail=()=>{
         fontSize={"20px"}
         fontWeight={430}
         color="#999BA3"
+        padding={'16px'}
         textAlign={"center"}
       >
         Free trial available post Demo

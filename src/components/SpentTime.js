@@ -42,7 +42,7 @@ export const SpentTime = () => {
   return (
     <Box
       width={"100%"}
-      borderTop={"1px solid #5F616D"}
+      
       borderBottom={"1px solid #5F616D"}
     >
       {/* Header Section */}
@@ -51,8 +51,8 @@ export const SpentTime = () => {
         margin={"auto"}
         borderRight={"1px solid #5F616D"}
         borderLeft={"1px solid #5F616D"}
-        paddingLeft={"20px"}
-        paddingRight={"20px"}
+        paddingLeft={"40px"}
+        paddingRight={"40px"}
         paddingTop={"55px"}
         paddingBottom={"55px"}
         alignContent={"center"}
@@ -87,11 +87,12 @@ export const SpentTime = () => {
         flexDirection={"row"}
         justifyContent={"space-between"}
         width={"1280px"}
-        paddingLeft={"20px"}
-        paddingRight={"20px"}
+        paddingLeft={"40px"}
+        paddingRight={"40px"}
       >
         {/* Main Content - 75% */}
-        <Box flex={3} textAlign="center">
+        <Box flex={3} textAlign="center"
+      >
           <Box textAlign={"left"}>
             <IconOne />
           </Box>
@@ -116,17 +117,17 @@ export const SpentTime = () => {
             {mainContent.description}
           </Typography>
           {mainContent.image}
-          <Box border={"1px solid red"} marginTop={"10px"} textAlign={"left"}>
+          <Box marginTop={"10px"} textAlign={"left"}>
             {currentIndex == 0 ? (
               <>
                 {" "}
                 <Big style={{ marginRight: "15px" }} onClick={()=>handlePrev()} />
-                <Small onClick={()=>handlePrev()} />
+                <Small style={{ cursor:"pointer"}} onClick={()=>handlePrev()} />
               </>
             ) : (
               <>
                 {" "}
-                <Small style={{ marginRight: "15px" }} onClick={()=>handlePrev()} />
+                <Small style={{ marginRight: "15px", cursor:"pointer" }} onClick={()=>handlePrev()} />
                 <Big  onClick={()=>handlePrev()}/>
               </>
             )}
@@ -167,12 +168,14 @@ export const SpentTime = () => {
           </Typography>
           {secondaryContent.image}
 
-          <Box border={"1px solid red"} marginTop={"10px"}>
+          <Box  marginTop={"10px"}>
             <Left
-              style={{ marginRight: "15px" }}
+              style={{ marginRight: "15px" ,cursor:"pointer"}}
               onClick={() => handlePrev()}
             />
-            <Right onClick={() => handleNext()} />
+            <Right  style={{
+               cursor:"pointer"
+            }}onClick={() => handleNext()} />
           </Box>
         </Box>
       </Box>

@@ -42,8 +42,8 @@ export const BeniFit = () => {
         margin={"auto"}
         borderRight={"1px solid #5F616D"}
         borderLeft={"1px solid #5F616D"}
-        paddingLeft={"20px"}
-        paddingRight={"20px"}
+        paddingLeft={"40px"}
+        paddingRight={"40px"}
         paddingTop={"55px"}
         paddingBottom={"55px"}
         alignContent={"center"}
@@ -77,14 +77,14 @@ export const BeniFit = () => {
         flexDirection={"row"}
         justifyContent={"space-evenly"}
         sx={{
-          width: "1320px", // Set width dynamically
+          width: "1360px", // Set width dynamically
         }}
       >
         {content.map((item, index) => (
           <Box
-            borderLeft={ index!=0?"1px solid #999BA3":""}
-            borderTop={"1px solid #999BA3"}
-             borderBottom={"1px solid #999BA3"}
+            borderLeft={ index!=0?"1px solid #5F616D":""}
+            borderTop={"1px solid #5F616D"}
+             borderBottom={"1px solid #5F616D"}
             padding={"40px"}
             borderRight={"none"}
             width={"90%"}

@@ -1,9 +1,17 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button ,TextField,InputAdornment} from "@mui/material";
 
 export const Footer = () => {
-  const content=[
-    "About us","Private Investors","Careers","Public Investors","Customers","Data Teams","Resources","","Media"
-  ]
+  const content = [
+    "About us",
+    "Private Investors",
+    "Careers",
+    "Public Investors",
+    "Customers",
+    "Data Teams",
+    "Resources",
+    "",
+    "Media",
+  ];
   return (
     <Box width={"100%"}>
       <Box
@@ -13,6 +21,8 @@ export const Footer = () => {
         flexWrap={"wrap"}
         margin={"auto"}
         mt={"80px"}
+        paddingLeft={"40px"}
+        paddingRight={"40px"}
       >
         <Box width={"50%"}>
           <Typography
@@ -30,26 +40,35 @@ export const Footer = () => {
           >
             Join leading funds in modernizing their portfolio data management
           </Typography>
+          <TextField
+        
+        label="TextField"
+        slotProps={{
+          input: {
+            startAdornment: (
+              <InputAdornment position="start">
+                
+              </InputAdornment>
+            ),
+          },
+        }}
+        variant="standard"
+      />
         </Box>
         <Box width={"50%"}>
-<Box display={"flex"} flexDirection={"row"} flexWrap={"wrap"}>
-{
-            content.map((item)=><Typography
-            width={"50%"}
-            marginTop={"20px"}
-            fontWeight={430}
-            fontSize={15}
-            fontFamily={"Matter-TRIAL"}
-          >
-           {item}
-          </Typography>)
-          }
-
-</Box>
-
-     
-        
-        
+          <Box display={"flex"} flexDirection={"row"} flexWrap={"wrap"}>
+            {content.map((item) => (
+              <Typography
+                width={"50%"}
+                marginTop={"20px"}
+                fontWeight={430}
+                fontSize={15}
+                fontFamily={"Matter-TRIAL"}
+              >
+                {item}
+              </Typography>
+            ))}
+          </Box>
         </Box>
       </Box>
     </Box>

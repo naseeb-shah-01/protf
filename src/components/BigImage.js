@@ -14,8 +14,8 @@ export const BigImage=()=>{
     borderRight={"1px solid #5F616D"}
     borderLeft={"1px solid #5F616D"}
   
-    paddingLeft={"20px"}
-    paddingRight={"20px"}
+    paddingLeft={"40px"}
+    paddingRight={"40px"}
     paddingTop={"55px"}
     paddingBottom={"55px"}
     alignContent={"center"}

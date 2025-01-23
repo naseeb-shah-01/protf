@@ -40,7 +40,7 @@ export const Stories = () => {
       
         alignContent={"center"}
         sx={{
-          width: "1320px", // Set width dynamically
+          width: "1360px", // Set width dynamically
         }}
       >
         <Typography
@@ -49,6 +49,7 @@ export const Stories = () => {
           fontWeight={430}
           color="#FFFFFF"
           textAlign={"center"}
+          
         >
           Customer stories{" "}
         </Typography>
@@ -62,7 +63,7 @@ export const Stories = () => {
           Our customers back our stack too
         </Typography>
 
-        <Box mt={"40px"}>
+        <Box mt={"40px"} marginTop={"60px"}>
           {content.map((item) => (
             <Box
               border={"1px  solid #5F616D"}

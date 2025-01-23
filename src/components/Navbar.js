@@ -29,7 +29,7 @@ export const Navbar = () => {
   return (
     <div
       style={{
-        border: "1px solid red",
+        
         width: "100%",
         backgroundColor: "#27282D",
         position: "fixed",
@@ -44,7 +44,8 @@ export const Navbar = () => {
         flexDirection={"row"}
         minHeight={"72px"}
         alignItems={"center"}
-      
+        width={"1280px"}
+        margin={"auto"}
         flexWrap={"wrap"}
         sx={{
           "@media (max-width: 600px)": {
@@ -73,9 +74,9 @@ export const Navbar = () => {
           flexWrap={"wrap"}
         >
           
-          <FrameIcon style={{marginLeft:'max(50px,5%)',"@media (max-width: 600px)": {
+          <FrameIcon style={{marginLeft:'20px',"@media (max-width: 600px)": {
              // Change to column on small screens
-            marginLeft: "10px",
+            
              // Adjust margin
           },}}></FrameIcon>
           {navContent.map((el) => (
@@ -89,8 +90,8 @@ export const Navbar = () => {
             </Typography>
           ))}
          
-        </Box>
-        <Box
+        {/* </Box> */}
+        {/* <Box
             display={"flex"}
             flexDirection={"row"}
             alignItems={"center"}
@@ -100,8 +101,8 @@ export const Navbar = () => {
                 marginLeft: "5%", // Adjust margin
               },
             }}
-          >
-            <ColorMode />
+          > */}
+            
             <Button
               sx={{
                 backgroundColor: "white",

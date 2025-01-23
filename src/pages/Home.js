@@ -22,15 +22,17 @@ export const Home = () => {
         margin={"auto"}
         borderRight={"1px solid #5F616D"}
         borderLeft={"1px solid #5F616D"}
-        paddingLeft={"20px"}
-        paddingRight={"20px"}
-        paddingBottom={"120px"}
+        paddingLeft={"40px"}
+        paddingRight={"40px"}
+        paddingBottom={"80px"}
       >
         <Typography
           fontFamily={"Matter-TRIAL"}
           fontSize={"70px"}
           fontWeight={300}
           textAlign={"center"}
+          lineHeight={"120%"}
+          marginBottom={"32px"}
         >
           Most Accurate Portfolio Look-through: Know Your Exact Asset Exposure
         </Typography>
@@ -43,7 +45,8 @@ export const Home = () => {
             margin: "auto",
           }}
           width={"90%"}
-          marginTop={"70px"}
+          sx={{marginTop:'32px'}}
+          
         >
           Single source of truth for your portfolio data, auto-updated from
           General Partner portals, emails and decks. Enriched with Synaptic’s
@@ -69,14 +72,16 @@ export const Home = () => {
             paddingLeft="32px"
             paddingTop="14px"
             paddingBottom="14px"
+            height="52px"
           >
             <Box
               display={"flex"}
               flexDirection={"row"}
               alignItems={"center"}
               fontWeight={570}
+              
             >
-              <Typography fontSize={"18px"} fontWeight={"570"}>
+              <Typography fontSize={"18px"} sx={{...textStyle,color:"black"}}  fontWeight={570}>
                 {" "}
                 Book a Demo{" "}
               </Typography>
@@ -114,21 +119,7 @@ export const Home = () => {
       <BigImage />
       <Trust />
 
-      {/* empty block */}
-      <Box
-        width={"1280px"}
-        margin={"auto"}
-        borderRight={"1px solid #5F616D"}
-        borderLeft={"1px solid #5F616D"}
-        paddingLeft={"20px"}
-        paddingRight={"20px"}
-        paddingTop={"55px"}
-        paddingBottom={"55px"}
-        alignContent={"center"}
-        borderBottom={"1px solid #5F616D"}
-      >
-        {" "}
-      </Box>
+     
 
    <BeniFit/>
    <SpentTime/>

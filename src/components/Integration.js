@@ -7,7 +7,7 @@ import { ReactComponent as Main } from "../assets/int/main.svg";
 export const Integration=()=>{
     return  <Box
     width={"100%"}
-    borderTop={"1px solid #5F616D"}
+    
     borderBottom={"1px solid #5F616D"}
   >
     <Box
@@ -15,8 +15,8 @@ export const Integration=()=>{
       margin={"auto"}
       borderRight={"1px solid #5F616D"}
       borderLeft={"1px solid #5F616D"}
-      paddingLeft={"20px"}
-      paddingRight={"20px"}
+      paddingLeft={"40px"}
+      paddingRight={"40px"}
       paddingTop={"55px"}
       paddingBottom={"55px"}
       alignContent={"center"}
@@ -27,6 +27,7 @@ export const Integration=()=>{
           fontWeight={430}
           color="#FFFFFF"
           textAlign={"center"}
+          marginBottom={"16px"}
         >
           Integration
         </Typography>
@@ -36,12 +37,13 @@ export const Integration=()=>{
           fontWeight={300}
           color="#FFFFFF"
           textAlign={"center"}
+          lineHeight={"120%"}
         >
           Level up your portfolio data, without disrupting your processes
         </Typography>
 
 
-        <Main style={{marginTop:"20px"}}/>
+        <Main style={{marginTop:"60px"}}/>
     </Box>
     
   </Box>

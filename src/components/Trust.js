@@ -18,10 +18,10 @@ export const Trust=()=>{
       margin={"auto"}
       borderRight={"1px solid #5F616D"}
       borderLeft={"1px solid #5F616D"}
-      paddingLeft={"20px"}
-      paddingRight={"20px"}
+      paddingLeft={"40px"}
+      paddingRight={"40px"}
       paddingTop={"55px"}
-     
+     paddingBottom={"80px"}
       alignContent={"center"}
     >
       <Typography
@@ -41,13 +41,13 @@ export const Trust=()=>{
         gap={10}
         width="100%"
         height="100%"
-        padding="20px"
+        marginTop={"32px"}
         boxSizing="border-box"
       >
-        <Felicis style={{ width: "100px", height: "auto" }} />
-        <Canaan style={{ width: "100px", height: "auto" }} />
-        <Tcg style={{ width: "100px", height: "auto" }} />
-        <Gen style={{ width: "100px", height: "auto" }} />
+        <Felicis style={{  height: "40px" }} />
+        <Canaan style={{  height: "40px" }} />
+        <Tcg style={{  height: "40px" }} />
+        <Gen style={{  height: "40px" }} />
        
        
       </Box>
