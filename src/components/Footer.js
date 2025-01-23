@@ -40,20 +40,7 @@ export const Footer = () => {
           >
             Join leading funds in modernizing their portfolio data management
           </Typography>
-          <TextField
-        
-        label="TextField"
-        slotProps={{
-          input: {
-            startAdornment: (
-              <InputAdornment position="start">
-                
-              </InputAdornment>
-            ),
-          },
-        }}
-        variant="standard"
-      />
+          
         </Box>
         <Box width={"50%"}>
           <Box display={"flex"} flexDirection={"row"} flexWrap={"wrap"}>

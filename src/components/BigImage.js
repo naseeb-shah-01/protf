@@ -42,9 +42,9 @@ export const BigImage=()=>{
   aria-describedby="parent-modal-description"
   
   style={{
-    width:'1920px',margin:"auto",height:"1080px"
+    width:'1280px',margin:"auto",height:"720px"
   }}
 >
-<iframe width="1920px" height="1080px" src="https://www.youtube.com/embed/CFBEU0GYac8?si=tfe3MUvH6xgSHaLF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1280px" height="720px" src="https://www.youtube.com/embed/CFBEU0GYac8?si=tfe3MUvH6xgSHaLF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </Modal> </Box>
 }
