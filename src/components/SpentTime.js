@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Typography, Button, IconButton } from "@mui/material";
 import { ReactComponent as ImageOne } from "../assets/slideImages/slideone.svg";
-import { ReactComponent as ImageTwo } from "../assets/slideImages/slideTwo.svg";
+import { ReactComponent as ImageTwo } from "../assets/slideImages/sai.svg";
 import { ReactComponent as Left } from "../assets/slideImages/left.svg";
 import { ReactComponent as Right } from "../assets/slideImages/right.svg";
 import { ReactComponent as IconOne } from "../assets/slideImages/flare.svg";
@@ -63,6 +63,7 @@ export const SpentTime = () => {
           fontWeight={430}
           color="#999BA3"
           textAlign={"center"}
+        
         >
           Benefits
         </Typography>
@@ -72,6 +73,8 @@ export const SpentTime = () => {
           fontWeight={300}
           color="#FFFFFF"
           textAlign={"center"}
+          borderBottom={"1px solid #5F616D"}
+          paddingBottom={"60px"}
         >
           Spend time analyzing data, not organizing it
         </Typography>
@@ -113,6 +116,7 @@ export const SpentTime = () => {
             fontWeight={300}
             color="#999BA3"
             marginTop={1}
+            marginBottom={"40px"}
           >
             {mainContent.description}
           </Typography>
@@ -152,6 +156,7 @@ export const SpentTime = () => {
             marginTop={2}
             textAlign={"left"}
             noWrap={"true"}
+           
           >
             {secondaryContent.title}
           </Typography>
@@ -163,12 +168,13 @@ export const SpentTime = () => {
             color="#999BA3"
             marginTop={1}
             noWrap={"true"}
+            marginBottom={"40px"}
           >
             {secondaryContent.description}
           </Typography>
           {secondaryContent.image}
 
-          <Box  marginTop={"10px"}>
+          <Box  marginTop={"10px"} display={"flex"} justifyContent={"flex-end"}>
             <Left
               style={{ marginRight: "15px" ,cursor:"pointer"}}
               onClick={() => handlePrev()}
