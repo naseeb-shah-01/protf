@@ -38,18 +38,19 @@ export const Navbar = () => {
         
       }}
     >
-         <FrameIcon style={{marginLeft:'max(50px,5%)'}}></FrameIcon>
+      
       <Box
         display={"flex"}
         flexDirection={"row"}
         minHeight={"72px"}
         alignItems={"center"}
-       width={"1280px"}
+      
         flexWrap={"wrap"}
         sx={{
           "@media (max-width: 600px)": {
             flexDirection: "column", // Change to column on small screens
-            marginLeft: "5%", // Adjust margin
+            marginLeft: "5%",
+            justifyContent:"flex-start" // Adjust margin
           },
         }}
       >
@@ -60,16 +61,23 @@ export const Navbar = () => {
           sx={{
             "@media (max-width: 600px)": {
               flexDirection: "column", // Change to column on small screens
-              marginLeft: "5%", // Adjust margin
+              marginLeft: "5%",
+              justifyContent:"flex-start" // Adjust margin
             },
           }}
           display={"flex"}
           alignItems={"center"}
           justifyContent={"space-between"}
        
-         width={"100%"}
+         width={"1280px"}
           flexWrap={"wrap"}
         >
+          
+          <FrameIcon style={{marginLeft:'max(50px,5%)',"@media (max-width: 600px)": {
+             // Change to column on small screens
+            marginLeft: "10px",
+             // Adjust margin
+          },}}></FrameIcon>
           {navContent.map((el) => (
             <Typography
               style={textStyle}
