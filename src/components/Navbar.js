@@ -35,6 +35,7 @@ export const Navbar = () => {
         position: "fixed",
         top: 0,
         left: 0,
+        zIndex:1000000
         
       }}
     >
