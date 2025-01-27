@@ -22,11 +22,10 @@ export const Home = () => {
         margin={"auto"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
-   
         paddingBottom={"80px"}
         sx={{
-             boxSizing: "border-box",
-             paddingTop: { xs: "76px", lg: "120px", md: "120px" },
+          boxSizing: "border-box",
+          paddingTop: { xs: "76px", lg: "120px", md: "120px" },
           width: { xs: "356px", lg: "1280px", md: "1280px" },
           margin: { xs: "auto", lg: "auto", md: "auto" },
           paddingBottom: { xs: "40px", lg: "80px", md: "80px" },
@@ -40,7 +39,7 @@ export const Home = () => {
           lineHeight={"120%"}
           marginBottom={"32px"}
           sx={{
-            fontSize:{ xs: "32px", lg: "70px", md: "70px" }
+            fontSize: { xs: "32px", lg: "70px", md: "70px" },
           }}
         >
           Most Accurate Portfolio Look-through: Know Your Exact Asset Exposure
@@ -65,26 +64,29 @@ export const Home = () => {
           display={"flex"}
           alignContent={"center"}
           justifyContent={"center"}
-          
           marginTop={"70px"}
+          alignItems={"center"}
           sx={{
-            display: { xs: "block",md:"flex",lg:'flex',sm:'flex' },
+            flexDirection: { xs: "column", md: "row", lg: "row", sm: "row" },
           }}
         >
           <Button
             sx={{
-              backgroundColor: "white",
+              backgroundColor: "#316D2F",
               color: "black",
               height: "40px",
               marginLeft: {
                 xs: "0px",
                 md: "30px",
                 lg: "30px",
-                sm:"30px"
+                sm: "30px",
               },
               textTransform: "none",
               width: {
                 xs: "326px",
+                md: "200px",
+                lg: "200px",
+                sm: "200px",
               },
             }}
             variant="contained"
@@ -102,7 +104,7 @@ export const Home = () => {
             >
               <Typography
                 fontSize={"18px"}
-                sx={{ ...textStyle, color: "black" }}
+                sx={{ ...textStyle, color: "white" }}
                 fontWeight={570}
               >
                 {" "}
@@ -123,13 +125,13 @@ export const Home = () => {
                 xs: "0px",
                 md: "30px",
                 lg: "30px",
-                sm:"30px"
+                sm: "30px",
               },
               marginTop: {
                 xs: "16px",
                 md: "0px",
                 lg: "0px",
-                sm:"0px"
+                sm: "0px",
               },
               width: {
                 xs: "326px",
@@ -152,15 +154,15 @@ export const Home = () => {
         </Box>
       </Box>
 
-    <FreeTrail />
-         <BigImage />
+      <FreeTrail />
+      <BigImage />
       <Trust />
 
-     <BeniFit />
-     <SpentTime />
-        {/*<Integration />
+      <BeniFit />
+      <SpentTime />
+      <Integration />
       <Stories />
-      <Footer /> */}
+      <Footer />
     </Box>
   );
 };

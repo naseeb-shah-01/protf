@@ -98,10 +98,15 @@ export const Navbar = () => {
         margin={"auto"}
         flexWrap={"wrap"}
         width={"1440px"}
-      
+        sx={{
+          width:{
+            xs:"358px",
+            md:"1280px",lg:"1440px",xl:"1440px"
+
+          }
+        }}
       >
         <Box
-        
           display={"flex"}
           alignItems={"center"}
           justifyContent={"space-between"}
@@ -109,7 +114,6 @@ export const Navbar = () => {
         >
           <FrameIcon
             style={{
-              
               width: `${widthObject.l}px`,
               // Change to column on small screens
 
@@ -128,7 +132,7 @@ export const Navbar = () => {
               mr={el.mr + "px"} 
             >
               {el.t} */}
-            {/* </Typography>
+          {/* </Typography>
           ))} */}
 
           {/* </Box> */}
@@ -144,23 +148,20 @@ export const Navbar = () => {
             }}
           > */}
 
-<Button
-  sx={{
-    backgroundColor: "white",
-    color: "black",
-    height: "40px",
-    textTransform: "none",
-    ml: { lg: "1017px", md: "1017px", },
-    mr:"12px", // Add margin-left here
-   display:{"xs":"none",lg:"block",md:"block",sm:"block"}
-  }}
-  variant="contained"
->
-  
-
-
+          <Button
+            sx={{
+              backgroundColor: "#316D2F",
+              color: "black",
+              height: "40px",
+              textTransform: "none",
+              ml: { lg: "1000px", md: "853px",xl:"900px" ,lg:"1000px"},
+              mr: "12px", // Add margin-left here
+              display: { xs: "none", lg: "block", md: "block", sm: "block" },
+            }}
+            variant="contained"
+          >
             <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
-              <Typography fontSize={"13px"}> Book a Demo </Typography>
+              <Typography fontSize={"13px"} color="white"> Book a Demo </Typography>
               <Arrow style={{ marginLeft: "10px" }} />
             </Box>
           </Button>
@@ -171,12 +172,10 @@ export const Navbar = () => {
 
               borderColor: "#5F616D",
               textTransform: "none",
-              display:{"xs":"none",lg:"block",md:"block",sm:"block"}
+              display: { xs: "none", lg: "block", md: "block", sm: "block" },
             }}
             variant="outlined"
             w={bData.l.w + "px"}
-            
-            
           >
             <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
               <Typography fontSize={"13px"}> Log In </Typography>

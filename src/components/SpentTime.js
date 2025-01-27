@@ -12,13 +12,13 @@ import { motion } from "framer-motion";
 export const SpentTime = () => {
   const content = [
     {
-      image: <ImageOne style={{ width: "100%" }} />,
+      image: <ImageOne style={{position:'relative',height:'100%',width:"100%"}}  />,
       title: "Accurate Company Disambiguation",
       description:
         "Automate personalized data collection from PortCos with a central dashboard for metrics and gap tracking.",
     },
     {
-      image: <ImageTwo style={{ width: "100%" }} />,
+      image: <ImageTwo style={{position:'relative',height:'100%',width:"100%"}}  />,
       title: "Extra insights at company level",
       description:
         "Automate personalized data collection from PortCos with a central dashboard for metrics and gap tracking.",
@@ -70,6 +70,7 @@ export const SpentTime = () => {
         borderLeft={"1px solid #34353b"}
         sx={{
           boxSizing: "border-box",
+      
 
           width: {
             xs: "358px",
@@ -116,7 +117,7 @@ export const SpentTime = () => {
         margin={"auto"}
         display={"flex"}
         flexDirection={"row"}
-        justifyContent={"space-between"}
+        
         width={"1280px"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
@@ -139,7 +140,7 @@ export const SpentTime = () => {
           transition={{ duration: 1.5, ease: "easeInOut" }}
         >
           <Box
-          flex={3}
+          
             textAlign="center"
             sx={{
               // border: "1px solid red",
@@ -157,6 +158,14 @@ export const SpentTime = () => {
                 md: "1080px",
                 lg: "1080px",
                 xl: "1080px",
+              },
+              paddingBottom: {
+                xs: "24px",
+
+                sm: "40px",
+                md: "40px",
+                lg: "40px",
+                xl: "40px",
               }, // Set width dynamically
             }}
           >
@@ -202,7 +211,27 @@ export const SpentTime = () => {
             >
               {mainContent.description}
             </Typography>
+            <Box height={"154px"} 
+            
+            sx={{
+              height: {
+                xs: "154px",
+                sm: "576px",
+                md: "576px",
+                lg: "576px",
+                xl: "576px",
+              },
+              width: {
+                xs: "290px",
+                sm: "1080px",
+                md: "1080px",
+                lg: "1080px",
+                xl: "1080px",
+              },
+            }}
+            width={"290px"}>
             {mainContent.image}
+            </Box>
             <Box marginTop={"10px"} textAlign={"left"}>
               {currentIndex === 0 ? (
                 <>
@@ -227,10 +256,135 @@ export const SpentTime = () => {
             </Box>
           </Box>
         </motion.div>
+        <Box textAlign="center" overflow={"hidden"}
+        
+        sx={{  width: {
+          xs: "290px",
+
+          sm: "1080px",
+          md: "1080px",
+          lg: "1080px",
+          xl: "1080px",
+
+        },
+        marginLeft: {xs: "10px",
+
+        sm: "40px",
+        md: "40px",
+        lg: "40px",
+        xl: "40px"},}}
+        
+        >
+          <Box textAlign={"left"}>
+            <IconOne />
+          </Box>
+          <Typography
+            fontFamily={"Matter-TRIAL"}
+            
+            fontSize={"24px"}
+            fontWeight={430}
+            color="#FFFFFF"
+            marginTop={2}
+            textAlign={"left"}
+            noWrap={"true"}
+
+            sx={{
+              fontSize: {
+                xs: "16px",
+                sm: "24px",
+                md: "24px",
+                lg: "24px",
+                xl: "24px",
+              },
+            }}
+          >
+            {secondaryContent.title}
+          </Typography>
+          <Typography
+            textAlign={"left"}
+            fontFamily={"Matter-TRIAL"}
+            
+            fontSize={"20px"}
+            fontWeight={300}
+            color="#999BA3"
+            marginTop={1}
+            noWrap={"true"}
+           
+
+            sx={{
+              fontSize: {
+                xs: "14px",
+                sm: "20px",
+                md: "20px",
+                lg: "20px",
+                xl: "20px",
+              },
+              height: {
+                xs: "100px",
+                sm: "60px",
+                md: "60px",
+                lg: "60px",
+                xl: "60px",
+              },
+            }}
+          >
+            {secondaryContent.description}
+          </Typography>
+         
+        
+
+
+          <Box height={"154px"} 
+            
+            sx={{
+              height: {
+                xs: "154px",
+                sm: "576px",
+                md: "576px",
+                lg: "576px",
+                xl: "576px",
+              },
+              width: {
+                xs: "290px",
+                sm: "1080px",
+                md: "1080px",
+                lg: "1080px",
+                xl: "1080px",
+              },
+             
+            }}
+            width={"290px"}> 
+          {secondaryContent.image}
+          </Box>
+          <Box marginTop={"10px"} display={"flex"} justifyContent={"flex-end"} 
+               sx={{
+                height: {
+                  xs: "32px",
+                  sm: "32px",
+                  md: "32px",
+                  lg: "32px",
+                  xl: "32px",
+                }
+               
+               
+          }}>
+            <Left
+              style={{ marginRight: "10px", cursor: "pointer" ,position:'relative',height:"100%",width:"100%" }}
+              onClick={() => handlePrev()}
+            />
+            <Right
+              style={{
+                cursor: "pointer",position:'relative',height:"100%",width:"100%"
+              }}
+              onClick={() => handleNext()}
+            />
+          </Box>
+        </Box>
+      </Box>
 
         {/* Secondary Content - 25% */}
       
-      </Box>
+      {/* </Box> */}
     </Box>
   );
 };
