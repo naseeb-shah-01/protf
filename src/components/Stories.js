@@ -40,7 +40,7 @@ export const Stories = () => {
       
         alignContent={"center"}
         sx={{
-          width: "1360px", // Set width dynamically
+          width:{xs:"358px"}, // Set width dynamically
         }}
       >
         <Typography
@@ -74,8 +74,13 @@ export const Stories = () => {
               borderBottom={"none"}
               borderLeft={"none"}
               borderRight={"none"}
+              sx={{
+                flexDirection:{
+                  xs:"column"
+                }
+              }}
             >
-              <Box width={"25%"} padding={"30px"} marginLeft={"10%"} >
+              <Box width={"25%"} sx={{width:{xs:"100%"}}}padding={"30px"} marginLeft={"10%"} >
                 {item.company}
               </Box>
               <Box

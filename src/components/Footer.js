@@ -21,13 +21,26 @@ export const Footer = () => {
         width={"1280px"}
         display={"flex"}
         flexDirection={"row"}
+        
         flexWrap={"wrap"}
         margin={"auto"}
         mt={"80px"}
         paddingLeft={"40px"}
-        paddingRight={"40px"}
+        paddingRight={"40px"}   sx={{
+          
+            width:{xs:"358px"}, // Set width dynamically
+          
+          flexDirection:{
+            xs:"column"
+          }
+        }}
+        
       >
-        <Box width={"50%"}>
+        <Box width={"50%"} sx={{
+          width:{
+            xs:"100%"
+          }
+        }}>
           <Typography
             fontWeight={300}
             fontSize={36}
@@ -77,7 +90,12 @@ export const Footer = () => {
           </Button>
           
         </Box>
-        <Box width={"50%"}>
+        <Box width={"50%"}
+        sx={{
+          width:{
+            xs:"100%"
+          }
+        }}>
           <Box display={"flex"} flexDirection={"row"} flexWrap={"wrap"}>
             {content.map((item) => (
               <Typography

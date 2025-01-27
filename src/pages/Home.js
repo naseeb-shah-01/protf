@@ -22,9 +22,15 @@ export const Home = () => {
         margin={"auto"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
-        paddingLeft={"40px"}
-        paddingRight={"40px"}
+   
         paddingBottom={"80px"}
+        sx={{
+             boxSizing: "border-box",
+             paddingTop: { xs: "76px", lg: "120px", md: "120px" },
+          width: { xs: "356px", lg: "1280px", md: "1280px" },
+          margin: { xs: "auto", lg: "auto", md: "auto" },
+          paddingBottom: { xs: "40px", lg: "80px", md: "80px" },
+        }}
       >
         <Typography
           fontFamily={"Matter-TRIAL"}
@@ -33,6 +39,9 @@ export const Home = () => {
           textAlign={"center"}
           lineHeight={"120%"}
           marginBottom={"32px"}
+          sx={{
+            fontSize:{ xs: "32px", lg: "70px", md: "70px" }
+          }}
         >
           Most Accurate Portfolio Look-through: Know Your Exact Asset Exposure
         </Typography>
@@ -45,8 +54,7 @@ export const Home = () => {
             margin: "auto",
           }}
           width={"90%"}
-          sx={{marginTop:'32px'}}
-          
+          sx={{ marginTop: "32px" }}
         >
           Single source of truth for your portfolio data, auto-updated from
           General Partner portals, emails and decks. Enriched with Synaptic’s
@@ -57,15 +65,27 @@ export const Home = () => {
           display={"flex"}
           alignContent={"center"}
           justifyContent={"center"}
+          
           marginTop={"70px"}
+          sx={{
+            display: { xs: "block",md:"flex",lg:'flex',sm:'flex' },
+          }}
         >
           <Button
             sx={{
               backgroundColor: "white",
               color: "black",
               height: "40px",
-              marginLeft: "30px",
+              marginLeft: {
+                xs: "0px",
+                md: "30px",
+                lg: "30px",
+                sm:"30px"
+              },
               textTransform: "none",
+              width: {
+                xs: "326px",
+              },
             }}
             variant="contained"
             paddingRight="32px"
@@ -79,9 +99,12 @@ export const Home = () => {
               flexDirection={"row"}
               alignItems={"center"}
               fontWeight={570}
-              
             >
-              <Typography fontSize={"18px"} sx={{...textStyle,color:"black"}}  fontWeight={570}>
+              <Typography
+                fontSize={"18px"}
+                sx={{ ...textStyle, color: "black" }}
+                fontWeight={570}
+              >
                 {" "}
                 Book a Demo{" "}
               </Typography>
@@ -95,14 +118,28 @@ export const Home = () => {
               marginLeft: "30px",
               borderColor: "#5F616D",
               textTransform: "none",
-              zIndex:0
+              zIndex: 0,
+              marginLeft: {
+                xs: "0px",
+                md: "30px",
+                lg: "30px",
+                sm:"30px"
+              },
+              marginTop: {
+                xs: "16px",
+                md: "0px",
+                lg: "0px",
+                sm:"0px"
+              },
+              width: {
+                xs: "326px",
+              },
             }}
             variant="outlined"
             paddingRight="24px"
             paddingLeft="24px"
             paddingTop="8px"
             paddingBottom="8px"
-            
           >
             <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
               <Log style={{ marginRight: "10px" }} />
@@ -115,17 +152,15 @@ export const Home = () => {
         </Box>
       </Box>
 
-      <FreeTrail />
-      <BigImage />
+    <FreeTrail />
+         <BigImage />
       <Trust />
 
-     
-
-   <BeniFit/>
-   <SpentTime/>
-   <Integration />
-   <Stories/>
-   <Footer/>
+     <BeniFit />
+     <SpentTime />
+        {/*<Integration />
+      <Stories />
+      <Footer /> */}
     </Box>
   );
 };

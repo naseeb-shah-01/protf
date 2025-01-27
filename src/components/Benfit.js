@@ -13,7 +13,7 @@ export const BeniFit = () => {
       image: <ImageOne />,
       title: "Centralized Collection",
       description:
-        "Automate collection requests or upload your documents directly.",
+        "Automate your  collection requests or upload your documents directly.",
       icon: <IconOne />,
     },
     {
@@ -42,11 +42,18 @@ export const BeniFit = () => {
         margin={"auto"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
-        paddingLeft={"40px"}
-        paddingRight={"40px"}
+       
         paddingTop={"55px"}
         paddingBottom={"55px"}
         alignContent={"center"}
+        sx={{
+          width: {
+            xs: "355px",
+
+            sm: "1280px",
+            md: "1280px",
+          },
+        }}
       >
         <Typography
           fontFamily={"Matter-TRIAL"}
@@ -64,45 +71,117 @@ export const BeniFit = () => {
           fontWeight={300}
           color="#FFFFFF"
           textAlign={"center"}
+          sx={{
+            fontSize:{
+              xs: "24px",
+              sm: "52px",
+              md: "52px",
+              lg: "52px",
+              xl: "52px",
+            },
+          }}
         >
           Scattered portfolio data to structured insights
         </Typography>
       </Box>
       <Box
         margin={"auto"}
-        borderRight={"1px solid #34353b"}
-        borderLeft={"1px solid #34353b"}
+        // borderRight={"1px solid #34353b"}
+        // borderLeft={"1px solid #34353b"}
         paddingBottom={"55px"}
         display={"flex"}
         flexDirection={"row"}
         justifyContent={"space-evenly"}
+        justifyItems={"center "}
+        //  border={"1px solid yellow"}
+        
         sx={{
-          width: "1360px", // Set width dynamically
+          borderRight:{
+            xs: "1px solid #34353b",
+            sm: "1px solid #34353b",
+            md: "1px solid #34353b",
+            lg: "1px solid #34353b",
+            xl: "1px solid #34353b",
+          },
+          borderLeft:{
+            xs: "1px solid #34353b",
+            sm: "1px solid #34353b",
+            md: "1px solid #34353b",
+            lg: "1px solid #34353b",
+            xl: "1px solid #34353b",
+          },
+          boxSizing: "border-box",
+          flexDirection:{xs:"column",sm:"row",md:"row","lg":'row',xl:'row'},
+          width: {
+            xs: "356px",
+            sm: "1280px",
+            md: "1280px",
+            lg: "1280px",
+            xl: "1280px",
+          }, // Set width dynamically
         }}
       >
         {content.map((item, index) => (
           <Box
-            borderLeft={ index!=0?"1px solid #34353b":""}
+            borderLeft={"1px solid #34353b"}
             borderTop={"1px solid #34353b"}
-             borderBottom={"1px solid #34353b"}
-            padding={"40px"}
-            borderRight={"none"}
-            width={"90%"}
+            borderBottom={"1px solid #34353b"}
+            borderRight={"1px solid #34353b"}
             display="flex"
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            textAlign="center"
+            sx={{
+              boxSizing: "border-box",
+              height: {
+                xs: "474px", // Extra small devices (mobile)
+                sm: "550px", // Small devices (tablets)
+                md: "550px", // Medium devices (laptops)
+                lg: "550px", // Large devices (desktops)
+                xl: "550px",
+              },
+              paddingX:{
+                xs: "40px", // Extra small devices (mobile)
+                sm: "40px", // Small devices (tablets)
+                md: "40px", // Medium devices (laptops)
+                lg: "40px", // Large devices (desktops)
+                xl: "40px",
+              },
+              paddingY:{
+                xs: "40px", // Extra small devices (mobile)
+                sm: "40px", // Small devices (tablets)
+                md: "40px", // Medium devices (laptops)
+                lg: "40px", // Large devices (desktops)
+                xl: "40px",
+              },
+              width: {
+                xs: "356px",
+                sm: "427px",
+                md: "427px",
+                lg: "427px",
+                xl: "427px",
+              },
+            }}
+            
             margin="auto"
-            height={"550px"} // Centers the entire Box horizontally
+            // Centers the entire Box horizontally
           >
             <Typography
               color="#5F616D"
               fontWeight={300}
               fontSize={18}
-             
+              // border={"1px solid red"}
               width={"100%"}
               textAlign={"left"}
+              sx={{
+                marginBottom: {
+                  xs: "40px", // Extra small devices (mobile)
+                  sm: "auto", // Small devices (tablets)
+                  md: "auto", // Medium devices (laptops)
+                  lg: "auto", // Large devices (desktops)
+                  xl: "auto",
+                },
+              }}
             >
               Step 0{index + 1}
             </Typography>
@@ -112,21 +191,28 @@ export const BeniFit = () => {
               alignItems="center"
               justifyContent="center"
               margin={"auto"}
+              width={"100%"}
+              // border={"1px solid red"}
+              marginTop={"0px"}
             >
               {item.image}
             </Box>
-            <Box
-              marginTop={"20px"}
-              width={"100%"}
-              
-              textAlign={"left"}
-            >
+            <Box marginTop={"20px"} width={"100%"} textAlign={"left"}>
               {item.icon}
             </Box>
             <Typography
               fontFamily={"Matter-TRIAL"}
               fontSize={"24px"}
               fontWeight={430}
+              sx={{
+                fontSize:{
+                  xs: "16px",
+                  sm: "24px",
+                  md: "24px",
+                  lg: "24px",
+                  xl: "24px",
+                },
+              }}
               color="#999BA3"
               textAlign={"left"}
               width={"100%"}
@@ -140,6 +226,15 @@ export const BeniFit = () => {
               color="#999BA3"
               textAlign={"left"}
               width={"100%"}
+              sx={{
+                fontSize:{
+                  xs: "14px",
+                  sm: "20px",
+                  md: "20px",
+                  lg: "20px",
+                  xl: "20px",
+                },
+              }}
             >
               {item.description}
             </Typography>

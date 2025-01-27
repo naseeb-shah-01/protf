@@ -20,6 +20,9 @@ export const Integration=()=>{
       paddingTop={"55px"}
       paddingBottom={"55px"}
       alignContent={"center"}
+      sx={{
+        width:{xs:"358px"}, // Set width dynamically
+      }}
     >
      <Typography
           fontFamily={"Matter-TRIAL"}
@@ -43,7 +46,7 @@ export const Integration=()=>{
         </Typography>
 
 
-        <Main style={{marginTop:"60px"}}/>
+        <Main style={{marginTop:"60px",width:"90%"}}/>
     </Box>
     
   </Box>

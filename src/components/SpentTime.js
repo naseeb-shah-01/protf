@@ -1,4 +1,4 @@
-import { useState,useEffect,useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Box, Typography, Button, IconButton } from "@mui/material";
 import { ReactComponent as ImageOne } from "../assets/slideImages/slideone.svg";
 import { ReactComponent as ImageTwo } from "../assets/slideImages/sai.svg";
@@ -12,13 +12,13 @@ import { motion } from "framer-motion";
 export const SpentTime = () => {
   const content = [
     {
-      image: <ImageOne />,
+      image: <ImageOne style={{ width: "100%" }} />,
       title: "Accurate Company Disambiguation",
       description:
         "Automate personalized data collection from PortCos with a central dashboard for metrics and gap tracking.",
     },
     {
-      image: <ImageTwo />,
+      image: <ImageTwo style={{ width: "100%" }} />,
       title: "Extra insights at company level",
       description:
         "Automate personalized data collection from PortCos with a central dashboard for metrics and gap tracking.",
@@ -28,7 +28,7 @@ export const SpentTime = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [triggerAnimation, setTriggerAnimation] = useState(false);
   const isFirstChange = useRef(true);
-  
+
   useEffect(() => {
     setTriggerAnimation(false); // Reset animation
     const timeoutDuration = isFirstChange.current ? 10000 : 5000; // 10 seconds for the first, then 5 seconds
@@ -37,10 +37,10 @@ export const SpentTime = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 2);
       isFirstChange.current = false; // Subsequent changes will use 5 seconds
     }, timeoutDuration);
-  
+
     return () => clearTimeout(timeout); // Clean up timeout
   }, [currentIndex]);
-  
+
   useEffect(() => {
     setTriggerAnimation(false); // Reset animation
     const timeout = setTimeout(() => setTriggerAnimation(true), 10); // Restart animation after a small delay
@@ -68,6 +68,17 @@ export const SpentTime = () => {
         padding={"55px 40px"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
+        sx={{
+          boxSizing: "border-box",
+
+          width: {
+            xs: "358px",
+            sm: "1280px",
+            md: "1280px",
+            lg: "1280px",
+            xl: "1280px",
+          }, //// Set width dynamically
+        }}
       >
         <Typography
           fontFamily={"Matter-TRIAL"}
@@ -86,6 +97,15 @@ export const SpentTime = () => {
           textAlign={"center"}
           borderBottom={"1px solid #34353b"}
           paddingBottom={"60px"}
+          sx={{
+            fontSize: {
+              xs: "24px",
+              sm: "52px",
+              md: "52px",
+              lg: "52px",
+              xl: "52px",
+            },
+          }}
         >
           Spend time analyzing data, not organizing it
         </Typography>
@@ -98,9 +118,18 @@ export const SpentTime = () => {
         flexDirection={"row"}
         justifyContent={"space-between"}
         width={"1280px"}
-        padding={"0 40px 55px"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
+        sx={{
+          boxSizing: "border-box",
+          width: {
+            xs: "358px",
+            sm: "1280px",
+            md: "1280px",
+            lg: "1280px",
+            xl: "1280px",
+          }, // Set width dynamically
+        }}
       >
         {/* Main Content - 75% */}
         <motion.div
@@ -109,7 +138,28 @@ export const SpentTime = () => {
           animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
         >
-          <Box flex={3} textAlign="center">
+          <Box
+          flex={3}
+            textAlign="center"
+            sx={{
+              // border: "1px solid red",
+              paddingLeft: {
+                xs: "16px",
+                sm: "40px",
+                md: "40px",
+                lg: "40px",
+                xl: "40px",
+              },
+              width: {
+                xs: "290px",
+
+                sm: "1080px",
+                md: "1080px",
+                lg: "1080px",
+                xl: "1080px",
+              }, // Set width dynamically
+            }}
+          >
             <Box textAlign={"left"}>
               <IconOne />
             </Box>
@@ -120,6 +170,15 @@ export const SpentTime = () => {
               color="#FFFFFF"
               marginTop={2}
               textAlign={"left"}
+              sx={{
+                fontSize: {
+                  xs: "16px",
+                  sm: "24px",
+                  md: "24px",
+                  lg: "24px",
+                  xl: "24px",
+                },
+              }}
             >
               {mainContent.title}
             </Typography>
@@ -131,6 +190,15 @@ export const SpentTime = () => {
               color="#999BA3"
               marginTop={1}
               marginBottom={"40px"}
+              sx={{
+                fontSize: {
+                  xs: "14px",
+                  sm: "20px",
+                  md: "20px",
+                  lg: "20px",
+                  xl: "20px",
+                },
+              }}
             >
               {mainContent.description}
             </Typography>
@@ -161,58 +229,8 @@ export const SpentTime = () => {
         </motion.div>
 
         {/* Secondary Content - 25% */}
-        <Box flex={1} textAlign="center" marginLeft={"20px"} overflow={"hidden"}>
-          <Box textAlign={"left"}>
-            <IconOne />
-          </Box>
-          <Typography
-            fontFamily={"Matter-TRIAL"}
-            fontSize={"24px"}
-            fontWeight={430}
-            color="#FFFFFF"
-            marginTop={2}
-            textAlign={"left"}
-            noWrap={"true"}
-          >
-            {secondaryContent.title}
-          </Typography>
-          <Typography
-            textAlign={"left"}
-            fontFamily={"Matter-TRIAL"}
-            fontSize={"20px"}
-            fontWeight={300}
-            color="#999BA3"
-            marginTop={1}
-            noWrap={"true"}
-            marginBottom={"40px"}
-          >
-            {secondaryContent.description}
-          </Typography>
-          {secondaryContent.image}
-          <Box marginTop={"10px"} display={"flex"} justifyContent={"flex-end"}>
-            <Left
-              style={{ marginRight: "15px", cursor: "pointer" }}
-              onClick={() => handlePrev()}
-            />
-            <Right
-              style={{
-                cursor: "pointer",
-              }}
-              onClick={() => handleNext()}
-            />
-          </Box>
-        </Box>
+      
       </Box>
     </Box>
   );
 };
-
-
-
-
-
-
-
-
-
-
