@@ -8,9 +8,15 @@ import {
 } from "@mui/material";
 import { ReactComponent as Arrow } from "../assets/images/arrow.svg";
 import { textStyle } from "./Navbar";
-import { ReactComponent as Mail } from "../assets/images/mail.svg";
+import { useState } from "react";
 
+import ScheduleDemoModal from "../components/BookDemoModal";
 export const Footer = () => {
+
+   const [showBookModal, setShowBookModal] = useState(false);
+    const handleClose = () => {
+      setShowBookModal(false);
+    };
   const content = [
     "About us",
     "Private Investors",
@@ -129,6 +135,7 @@ export const Footer = () => {
           </Typography>
 
           <Button
+          onClick={()=>setShowBookModal(true)}
             sx={{
               backgroundColor: "#316D2F",
               color: "white",
@@ -210,6 +217,7 @@ export const Footer = () => {
           </Box>
         </Box>
       </Box>
+      <ScheduleDemoModal  open={showBookModal} onClose={handleClose}/>
     </Box>
   );
 };

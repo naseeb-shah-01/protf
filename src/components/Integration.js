@@ -12,7 +12,7 @@ export const Integration = () => {
         borderLeft={"1px solid #34353b"}
        
         paddingTop={"55px"}
-        paddingBottom={"55px"}
+        paddingBottom={"80px"}
         alignContent={"center"}
         sx={{
           boxSizing: "border-box",

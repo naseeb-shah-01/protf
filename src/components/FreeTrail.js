@@ -22,6 +22,7 @@ export const FreeTrail = () => {
      
         paddingTop={"35px"}
         paddingBottom={"35px"}
+        
         sx={{
           boxSizing: "border-box",
           width: { xs: "356px", lg: "1280px", md: "1280px", sm: "1280px" },
@@ -34,7 +35,8 @@ export const FreeTrail = () => {
           fontSize={"20px"}
           fontWeight={430}
           color="#999BA3"
-          padding={"16px"}
+          padding={"0px 16px"}
+
           textAlign={"center"}
         >
           Free trial available post Demo

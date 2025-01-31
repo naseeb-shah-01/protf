@@ -68,6 +68,7 @@ export const SpentTime = () => {
         padding={"55px 40px"}
         borderRight={"1px solid #34353b"}
         borderLeft={"1px solid #34353b"}
+        
         sx={{
           boxSizing: "border-box",
       

@@ -88,7 +88,7 @@ export const BeniFit = () => {
         margin={"auto"}
         // borderRight={"1px solid #34353b"}
         // borderLeft={"1px solid #34353b"}
-        paddingBottom={"55px"}
+        paddingBottom={"80px"}
         display={"flex"}
         flexDirection={"row"}
         justifyContent={"space-evenly"}
