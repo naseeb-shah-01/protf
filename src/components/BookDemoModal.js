@@ -83,7 +83,7 @@ const ScheduleDemoModal = ({ open, onClose }) => {
       setLoading(true);
       setIsFlipped(true); // Trigger flip animation
 
-      API.postData(serverUrl + "add", { ...formData })
+      API.postData(serverUrl + "request", { ...formData })
         .then((e) => {
 
           setFormData({ fullName: "",
@@ -97,8 +97,11 @@ const ScheduleDemoModal = ({ open, onClose }) => {
           // Close the modal (optional)
           // Wait for the animation to complete
         })
-        .catch((e) => console.log(e))
+        .catch((e) =>{
+          alert("Some thing went wrong.")
+        })
         .finally(() => {
+
           setLoading(false);
         });
     } else {
